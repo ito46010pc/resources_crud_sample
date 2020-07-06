@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # 削除を行うためのルーティング
   delete '/users/:id', to: 'users#destroy'
 
+  resources :users
+
 end
